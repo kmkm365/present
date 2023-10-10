@@ -141,7 +141,7 @@ textarea {
     overflow-y: auto;
 }
 
-` #modal-close {
+#modal-close {
     position: absolute;
     top: 15%;
     font-size: 50px;
