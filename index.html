@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>선생</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <div id="start">
+            <button class="title" id="startbtn"><span style="color: white">선</span>물을 <br><span
+                    style="color: white">생</span>각하다</button>
+
+        </div>
+        <main id="qna">
+            <header id="restart">
+                <span style="Color: beige">선</span>물을 <span style="Color: beige">생</span>각하다
+            </header>
+            <div class="qnabox">
+                <div class="form-group">
+                    <label for="question1">선물 대상의 성별은?</label>
+                    <select id="question1">
+                        <option value="남">👨🏻남</option>
+                        <option value="여">👩🏻여</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question2">선물 대상의 나이는?</label>
+                    <select id="question2">
+                        <option value="10대">10대</option>
+                        <option value="20대">20대</option>
+                        <option value="30대">30대</option>
+                        <option value="40대">40대</option>
+                        <option value="50대">50대</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="question3">생각하는 금액대를 알려주세요</label>
+                    <input type="text" id="question3">
+                </div>
+                <div class="form-group">
+                    <label for="question4">선물하는 분과의 관계를 알려주세요</label>
+                    <input type="text" id="question4">
+                </div>
+
+                <div class="form-group">
+                    <label for="question5"> 선물 목적을 알려주세요 (예: 기념일, 생일, 졸업 선물 등)</label>
+                    <input type="text" id="question5">
+                    <br><br>
+                </div>
+
+                <div style="text-align: center;">
+                    <button id="saveAnswers">🎁선물 추천받기</button>
+                </div>
+            </div>
+        </main>
+
+
+
+        <div id="modal">
+            <header id="restart">
+                <span style="Color: beige">선</span>물을 <span style="Color: beige">생</span>각하다
+            </header>
+            <div id="modalframe">
+                <div id="modalbox"></div>
+
+                <span id="modal-close">x</span>
+                <button id="gotochatbot">🤖선생봇한테 상담하기🤖</button>
+            </div>
+        </div>
+
+
+        <div id="chat-container">
+            <header id="restart">
+                <span style="Color: beige">선</span>물을 <span style="Color: beige">생</span>각하다
+            </header>
+            <div id="chat">
+
+
+
+                <div id="chat-messages"></div>
+                <div id="user-input">
+                    <input class="send" type="text" placeholder="메시지를 입력하세요..." />
+                    <button>전송</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+        </footer>
+
+        <script src="chatbot.js"></script>
+    </body>
+
+</html>
